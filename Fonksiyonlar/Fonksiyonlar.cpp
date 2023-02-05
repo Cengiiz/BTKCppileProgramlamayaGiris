@@ -3,24 +3,27 @@
 
 #include <iostream>
 
-void Mesaj(char msg,char msg2)
+int Topla(int sayi1, int sayi2)
 {
-    std::cout << msg<<msg2;
+    std::cout << "int";
+    return sayi1 + sayi2;
 }
 
-int Topla(int sayi1, int sayi2);
+double Topla(double sayi1, double sayi2)
+{
+    std::cout << "double";
+    return sayi1 + sayi2;
+}
+
 
 int main()
 {
-    Mesaj('a','b');
-    std::cout << Topla(5,5);
+    int a = 10;
+    int b = 10;
+    std::cout << Topla(a,b);
 
 }
-int Topla(int sayi1, int sayi2)
-{
 
-    return sayi1 + sayi2;
-}
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
