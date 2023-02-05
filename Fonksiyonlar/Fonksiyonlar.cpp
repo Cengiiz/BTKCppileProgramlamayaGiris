@@ -2,7 +2,7 @@
 //
 
 #include <iostream>
-
+#include <string>
 int Topla(int sayi1, int sayi2)
 {
     std::cout << "int";
@@ -15,13 +15,13 @@ double Topla(double sayi1, double sayi2)
     return sayi1 + sayi2;
 }
 
-
+void print(std::string text="Test",int a=0,bool as=true)
+{
+    std::cout << text;
+}
 int main()
 {
-    int a = 10;
-    int b = 10;
-    std::cout << Topla(a,b);
-
+    
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
