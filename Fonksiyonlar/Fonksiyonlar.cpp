@@ -8,7 +8,7 @@ int Topla(int sayi1, int sayi2)
     std::cout << "int";
     return sayi1 + sayi2;
 }
-
+using Ftopla = int(*)(int, int);
 double Topla(double sayi1, double sayi2)
 {
     std::cout << "double";
@@ -19,9 +19,25 @@ void print(std::string text="Test",int a=0,bool as=true)
 {
     std::cout << text;
 }
+
+int topla(int a,int b)
+{
+    return a + b;
+}
+
+int getir(int(*topla)(int,int))
+{
+    return topla(5, 6);
+}
+int getir2(Ftopla topla)
+{
+    return topla(5, 6);
+}
+
+
 int main()
 {
-    
+    std::cout << getir(topla);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
