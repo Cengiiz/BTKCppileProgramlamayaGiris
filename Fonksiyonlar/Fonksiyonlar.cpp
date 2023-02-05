@@ -8,11 +8,7 @@ void Mesaj(char msg,char msg2)
     std::cout << msg<<msg2;
 }
 
-int Topla(int sayi1, int sayi2)
-{
-    
-    return sayi1 + sayi2;
-}
+int Topla(int sayi1, int sayi2);
 
 int main()
 {
@@ -20,7 +16,11 @@ int main()
     std::cout << Topla(5,5);
 
 }
+int Topla(int sayi1, int sayi2)
+{
 
+    return sayi1 + sayi2;
+}
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
