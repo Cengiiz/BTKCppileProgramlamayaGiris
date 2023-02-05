@@ -15,6 +15,11 @@ double Topla(double sayi1, double sayi2)
     return sayi1 + sayi2;
 }
 
+inline int toplai(int a, int b)
+{
+    return a + b;
+}
+
 void print(std::string text="Test",int a=0,bool as=true)
 {
     std::cout << text;
